@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FreeCodeCamp Survey</title>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="hero">
+            <h1 id="title">Movies Survey</h1>
+            <p id="description">Tell us more about what do you like to watch.</p>
+        </div>
+        <div class="form-container">
+            <form id="survey-form">
+                <div class="form-content">
+                    <label id="name-label" for="name">Your Name:</label>
+                    <input type="text" id="name" required placeholder="Please enter your name">
+                </div>
+                <div class="form-content">
+                    <label id="email-label" for="email">E-mail:</label>
+                    <input type="email" id="email" required placeholder="Please enter your email">
+                </div>
+                <div class="form-content">
+                    <label id="number-label" for="number">Age:</label>
+                    <input id="number" type="number" min="8" max="120" placeholder="Please enter your age">
+                </div>
+                <div class="form-content choises">
+                    <label id="dropdown-label" for="dropdown">How often do you watch movies?</label>
+                    <select name="dropdown-list" id="dropdown">
+                        <option value="every-night">Every night</option>
+                        <option value="every-night">Every 2 to 3 nights</option>
+                        <option value="every-night">At least once a week</option>
+                        <option value="every-night">Less than once a week</option>
+                    </select>
+                </div>
+                <div class="form-content">
+                    <h2 class="question">Do you think re-makes of old films are a good idea?</h2>
+                    <div class="answers choises">
+                        <div class="radio">
+                            <input id="yes" type="radio"  name="question-1" value="yes">
+                            <label for="yes">Yes</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="question-1" value="no">
+                            <label  for="number">No</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="question-1" value="it-depends">
+                            <label for="number">It depends</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="question-1" value="im-not-sure">
+                            <label for="number">I’m not sure</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-content">
+                    <h2 class="question">How do you watch movies?</h2>
+                    <div class="answers choices">
+                        <div class="radio">
+                            <input type="checkbox" name="question-2" value="in-cinema">
+                            <label for="yes">In cinema</label>
+                        </div>
+                        <div class="radio">
+                        <input type="checkbox"  name="question-2" value="NowTV">
+                        <label  for="number">NowTV</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox"  name="question-2" value="Pay-per view services">
+                        <label  for="number">Pay-per view services</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Itunes">
+                        <label  for="number">ITunes</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Crackle">
+                        <label  for="number">Crackle</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Netflix">
+                        <label  for="number">Netflix</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Amazon prime">
+                        <label  for="number">Amazon prime</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="talktalk tv store">
+                        <label  for="number">TalkTalk TV Store</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Apple tv">
+                        <label  for="number">Apple TV</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Roku">
+                        <label  for="number">Roku</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="Redbox">
+                        <label  for="number">RedBox</label>
+                    </div>
+                        <div class="radio">
+                        <input type="checkbox" name="question-2" value="other">
+                        <label  for="number">Other</label>
+                    </div>
+                    </div>
+                </div>
+                <div class="form-content textarea">
+                    <label for="comments"></label>
+                    <textarea name="comment" id="comments" cols="30" rows="10" placeholder="Your comments"></textarea>
+                </div>
+                <div class="form-content">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
